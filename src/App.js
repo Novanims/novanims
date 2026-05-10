@@ -1,10 +1,25 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero"
+import About from "./Components/About";
+import CompPlay from "./Components/CompPlay";
+import Services from "./Components/Services";
+import Contact from "./Components/Contact"
 function App() {
   return (
     <>
     <Navbar/>
-    <section id="about" className="bg-red text-whitesmoke">
+    <Hero/>
+    <CompPlay/>
+    <Services/>
+    <Contact/>
+    </>
+  );
+}
+export default App;
+
+/*
+<section id="about" className="bg-red text-whitesmoke">
         <div className="side"/>
         <div className="about-box">
             <h1>
@@ -19,9 +34,9 @@ function App() {
         <div className="side"/>
         <div className="content-box">
             <div className="buffer"/>
-            <h2 className="title">Demo</h2>
-            <div className="serv-box">
-                <h2>Coming soon... on May 15, ;D</h2>
+            <div className="play-box">
+                <h2>Something playful<br/>this way comes...
+                <br/>Soon!</h2>
             </div>
         </div>
         <div className="side"/>
@@ -50,17 +65,15 @@ function App() {
     </section>
     <section id="contact" className="text-red">
         <div className="side"/>
-        <div className="content-box">
-            <div className="buffer"/>
-            <h2 className="contact-content">
+        <div className="contact-box">
+            <h2>
                 Got questions?
+                <br/>
+                Wanna co-dev a project?
                 <br/>
                 Reach out at novanims@proton.me
             </h2>
         </div>
         <div className="side"/>
     </section>
-    </>
-  );
-}
-export default App;
+*/
